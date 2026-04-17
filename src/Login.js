@@ -29,7 +29,7 @@ class Login extends Component {
     const { email, senha } = this.state;
 
     if (email === "eduardo.lino@pucpr.br" && senha === "123456") {
-      this.setState({ mensagem: "Acessado com sucesso!" });
+      this.setState({ mensagem: "Acesso liberado com sucesso!" });
     } else {
       this.setState({ mensagem: "Usuário ou senha incorretos" });
     }
@@ -38,11 +38,11 @@ class Login extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Login</h1>
+        <h1>Login Sistema</h1>
 
         <input
           type="email"
-          placeholder="Digite seu email"
+          placeholder="Digite seu email de acesso"
           onChange={this.mudaEmail}
         />
 
