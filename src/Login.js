@@ -42,7 +42,7 @@ class Login extends Component {
 
         <input
           type="email"
-          placeholder="Digite seu email"
+          placeholder="Digite seu email de acesso"
           onChange={this.mudaEmail}
         />
 
