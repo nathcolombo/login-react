@@ -29,7 +29,7 @@ class Login extends Component {
     const { email, senha } = this.state;
 
     if (email === "eduardo.lino@pucpr.br" && senha === "123456") {
-      this.setState({ mensagem: "Acessado com sucesso!" });
+      this.setState({ mensagem: "Acesso liberado com sucesso!" });
     } else {
       this.setState({ mensagem: "Usuário ou senha incorretos" });
     }
