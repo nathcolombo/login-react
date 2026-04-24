@@ -1,0 +1,17 @@
+name: Alert Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Alert message
+        run: echo "🚨 ALERTA: mudança detectada no login-react!"
